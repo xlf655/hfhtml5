@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>鲁迅说</title>
+  <style media="screen">
+    body {
+      font-family: Verdana,Helvetica,sans-serif;
+    }
+  </style>
+  <script type="text/javascript">
+    function makePhrases() {
+      var word1=["我和我的小伙伴都惊呆了","一百块钱都不黑我","蓝瘦香菇","你们这是自寻死路","我是大自然的守护者","老司机带带我","友谊的小船说翻就翻","这盛世如你所愿","这届人民不行","坟头草已经一米多高了"];
+      var word2=["你有freestyle吗？","我觉得不行","我觉得OK","无人知是荔枝来","哥吃的不是面是寂寞","约吗","你开心就好","这逼装的我给满分","我裤子都脱了你就让我看这个","伐开心要包包","葛优躺"];
+      var word3=["你是GG还是MM","飞龙骑脸怎么输","4号金水","星际争霸2","客官","感觉身体被掏空","我使出了洪荒之力","来啊 互相伤害啊","脑子是个好东西","我就问你怕不怕"];
+      var word4=["可以 这很清真","比如挣它一个亿","你咋不上天呢","吃瓜群众","工匠精神","套路","当然是选择原谅她啊","萌萌哒","画面太美我不敢看","前方高能","我也是醉了","侦测到在途的核聚变打击","有钱，就是任性"]
+      var rand1=Math.floor(Math.random()*word1.length);
+      var rand2=Math.floor(Math.random()*word2.length);
+      var rand3=Math.floor(Math.random()*word3.length);
+      var rand4=Math.floor(Math.random()*word4.length);
+      var
+      phrase=word1[rand1]+""+word2[rand2]+""+word3[rand3]+""+word4[rand4];
+      var phraseElenment=document.getElementById("phrase");
+      phraseElenment.innerHTML=phrase;
+    }
+    window.onload=makePhrases;
+  </script>
+</head>
+<body>
+  <h1>鲁迅说：</h1>
+  <p id="phrase"></p>
+</body>
+</html>

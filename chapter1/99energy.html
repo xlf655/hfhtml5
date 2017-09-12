@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+  var drink="健力宝";
+  var lyrics="";
+  var cans=99;
+  while (cans> 0) {
+    lyrics=lyrics+cans+"瓶"+drink+"在桌子上 <br>";
+    lyrics=lyrics+"还剩"+cans+"瓶"+drink+"<br>";
+    lyrics=lyrics+"拿走一瓶 <br>";
+    if (cans>1) {
+      lyrics=lyrics+(cans-1)+"瓶"+drink+"在桌子上 <br> ";
+    }
+      else {
+        lyrics=lyrics+"一瓶 "+drink+"也没有了 <br>";
+      }
+    cans=cans-1;
+  }
+  document.write(lyrics);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

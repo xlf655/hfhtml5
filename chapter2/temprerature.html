@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Temperatures</title>
+  <script type="text/javascript">
+    function showTemps() {
+      var temByHour=[59.2,60.1,63,65,62];
+      for (var i = 0; i < temByHour.length; i++) {
+        var theTemp=temByHour[i];
+        var id="temp"+i;
+        var li=document.getElementById(id);
+        if (i==0) {
+          li.innerHTML="The temperature at noon was"+theTemp;
+        } else {
+          li.innerHTML="The temperature at"+i+"was" + theTemp;
+        }
+      }
+    }
+    window.onload=showTemps;
+  </script>
+</head>
+<body>
+  <h1>Temperatures</h1>
+  <ul>
+    <li id="temp0"></li>
+    <li id="temp1"></li>
+    <li id="temp2"></li>
+    <li id="temp3"></li>
+    <li id="temp4"></li>
+  </ul>
+</body>
+</html>
